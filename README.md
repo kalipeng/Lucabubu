@@ -1,52 +1,44 @@
-# clientproject
 
-### Project Title  
-**SonicWalk: A Sound Map Experience in Seattle Parks**
-
----
-
-### Project Objectives
-
-SonicWalk is an interactive sound map that allows people to explore Seattle parks through ambient sound. Combining walking with listening, the app invites users to slow down, reflect, and rediscover public spaces through the richness of everyday soundscapes — birds, leaves, laughter, water, dogs, and urban echoes. It brings a layer of memory, emotion, and storytelling to outdoor movement.
+ **Project Title**  
+**LUCA BUBU: Pet Trail Explorer**  
+_“Find your next favorite walk — tails welcome.”_
 
 ---
 
-### Target Users & Needs
+### **Project Objectives**  
+**LUCA BUBU** is a digital trail map that helps pet owners explore Bellevue’s best pet-friendly parks and walking paths. Designed for everyday adventures, it highlights leash zones, pet amenities, walk difficulty, and scenic routes. Whether it’s a quick potty break or a weekend hike, LUCA BUBU makes it easy (and fun) to find the right trail for you and your pet.
+
+---
+
+### **Target Users & Needs**  
 
 **Target Users:**  
-- Urban walkers and nature lovers  
-- Artists, sound designers, and students  
-- Seniors or people with limited mobility who want to “walk” through listening  
-- Tourists exploring Seattle in a slower, more poetic way  
+- Dog owners, especially new to the area  
+- Busy pet parents looking for quick walk spots  
+- Seniors or families with pets seeking safe, flat paths  
+- Pet sitters, dog walkers, and casual strollers  
+- Visitors exploring Bellevue with their pets  
 
 **User Needs:**  
-- A way to experience parks without always relying on visuals  
-- Discovery of peaceful or inspiring places in the city  
-- Accessible and calm outdoor experiences  
-- A platform to share or listen to personal sonic memories  
+- A visual guide to pet-friendly trails and amenities  
+- Trail filters (length, terrain, leash rules, shade, water fountains)  
+- Easy-to-use map to plan pet walks  
+- Discover new parks and avoid overcrowded or unsafe spots  
 
 ---
 
-###  Key Deliverables
-
-- A digital sound map of selected Seattle parks (e.g., Volunteer Park, Gas Works, Discovery Park)  
-- Custom interface that lets users “walk” by tapping or following GPS  
-- Embedded audio clips recorded on location (field recordings, personal stories, ambient sounds)  
-- Option for users to upload their own recordings or reflections  
-- GitHub repo with code and sound design system  
-- A final PDF with project goals, design sketches, and sound samples  
-
----
-
-### Special Constraints
-
-- Must ensure accessibility (for example, transcripts or captions of sound)  
-- Should not collect personal location data without consent  
-- All user-contributed content must follow content guidelines (no hate, no inappropriate audio)  
-- Needs to comply with local park audio recording permissions if published  
+### **Key Deliverables**  
+- Interactive web map of Bellevue’s pet-friendly walkways and trails  
+- Filterable trail info (distance, terrain, leash zone, facilities)  
+- Pet icon markers for bathrooms, water stations, dog parks, etc.  
+- Option to bookmark favorite spots or create a walking log  
+- GitHub repo with front-end code, data layers, and UI components  
+- Final PDF or one-pager with UX flow, feature summary, and visuals  
 
 ---
 
-### Expected Outcome
-
-An emotional and immersive sound-based walking experience that transforms how people experience parks. SonicWalk helps users reconnect with the environment, discover overlooked sonic beauty, and even reflect on their own pace of life in the city.
+### **Special Constraints**  
+- Needs to use accurate, verified public data (trails, amenities)  
+- Must ensure ADA accessibility info where available  
+- No personal tracking unless user opts in  
+- All trail recommendations should be safe and appropriate for pets  
