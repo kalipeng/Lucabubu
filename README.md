@@ -33,6 +33,8 @@ The project runs from **April 11, 2025** to **June 20, 2025**.
 
 ## Contact Information
 **Team LUCA BUBU**  
-Got questions or ideas? Reach out to us!
+Suzy Liu
+Kelly Peng Peng906@uw.edu
+
 
  🐾
