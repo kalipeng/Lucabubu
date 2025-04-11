@@ -35,6 +35,4 @@ The project runs from **April 11, 2025** to **June 20, 2025**.
 **Team LUCA BUBU**  
 Got questions or ideas? Reach out to us!
 
----
-
-Let's get out there and explore some pawsome trails together! 🐾✨
+ 🐾
