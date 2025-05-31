@@ -1,68 +1,55 @@
 # lucabubu
 
-A modern, minimal web app for discovering and sharing Bellevue-area dog-friendly parks and trails, with a focus on clean UI and social dog-walking (team up) features.
+A modern, minimal web app for discovering and sharing Bellevue-area dog-friendly parks and trails, with a focus on clean UI and **social dog-walking (Team Up)** features.
 
-## Features (Detailed)
+---
 
-- **Minimal UI**
-  - No text header or sidebar, only a centered logo at the top for a clean, distraction-free look.
-  - Blue/white color scheme, modern fonts (Oswald for headings, Quicksand for body text).
+## Features
 
-- **Card + Map Layout**
-  - The main view is split into two sections:
-    - **Left:** A scrollable list of park/trail cards. Each card shows a photo, name, dog-friendliness, and summary info.
-    - **Right:** A black-and-white styled Google Map.
-  - The layout is responsive and adapts to desktop and mobile screens.
+### 🐾 Minimal & Modern UI
+- Centered logo in the top bar (clickable, returns to homepage).
+- Warm brown/beige color scheme, modern fonts (Oswald for headings, Quicksand for body text).
+- Responsive layout for desktop and mobile.
 
-- **Expandable Cards**
-  - Each card can be clicked to expand and show detailed information, including:
-    - Trail/Park name
-    - Address
-    - Dog-friendliness (allowed, not allowed, leash required)
-    - Length & estimated time
-    - Difficulty level (with icons)
-    - Terrain description
-    - Parking info (with icons)
-    - Facilities (restroom, water, dog bowl, etc.)
-    - Crowd level, nearby cafes, weather tips
-    - Dog owner reviews (demo data)
-  - Only one card can be expanded at a time.
+### 🗺️ Card + Map Layout
+- **Left:** Scrollable list of park/trail cards. Each card shows name, dog-friendliness, and summary info.
+- **Right:** Google Map with custom styling.
+- Click a card to center the map on that park/trail and see distance from your location (if enabled).
 
-- **Card/Map Linking**
-  - Only the currently expanded card will show a marker on the map.
-  - Clicking a card will center the map on the corresponding location and show its marker.
-  - If no card is expanded, the map shows no markers.
+### 📍 Location & Distance
+- Toggle "Show My Location" to display your position on the map.
+- Each card shows the distance from your current location.
 
-- **Floating Team Up Button**
-  - A round, blue button with a users icon floats at the bottom right of the page.
-  - Hover and click effects for modern UX.
+### 👫 Team Up Social System
+- **Team Up** is a dedicated social feature for dog owners to create and join walking groups.
+- Access Team Up via the floating button or `/teamup` page.
 
-- **Team Up Modal**
-  - Clicking the Team Up button opens a modal window centered on the screen.
-  - The modal displays a list of demo dog-walking team up events (3 by default).
-  - Each team up card shows:
-    - Time and location (collapsed view)
-    - On click, expands to show:
-      - Host, dog type, contact, pace, snacks/games, notes
-      - A prominent "Join" button (demo: shows alert)
-  - Only one team up card can be expanded at a time.
-  - The modal can be closed by clicking outside the box.
+#### Team Up Page Features:
+- **Left:** List of all teams, filterable by dog size (all/small/large).
+- **Right:** Map highlights all parks with active teams; selecting a team highlights its park.
+- **Bottom Ikon Bar:**
+  - Filter teams by dog size (paw = all, 🐶 = small, 🦮 = large).
+  - 💬 icon opens a message board for the selected team (local, persistent).
+  - ➕ icon opens a form to create a new team.
 
-- **Add Team Up**
-  - A + button in the modal's bottom right corner allows users to (demo) add a new team up event (currently shows an alert).
+#### Team Card Features:
+- Shows team name, park, avatars, member count, next event, and message.
+- **Join** button: Add yourself to the team (avatar = your username initial).
+- **Message**: Each team has a persistent message board (localStorage).
 
-- **English Interface**
-  - All UI text, labels, and demo data are in English for international accessibility.
+#### Team Creation:
+- Create a team with: name, park (dropdown), dog size (small/large), message, and avatars.
+- All teams and messages are saved locally and persist after refresh.
 
-- **Modern Fonts**
-  - Oswald is used for headings and section titles.
-  - Quicksand is used for all body text and card content.
+### 🏷️ Authentication (Local)
+- Simple login/register system (localStorage, no backend).
+- Username and avatar shown in the top right after login.
+- Sign out button.
 
-- **Responsive Design**
-  - The layout and all components adapt to different screen sizes, ensuring usability on both desktop and mobile devices.
+### 🏞️ Customizable Assets
+- Logo, illustration, and paw print can be replaced in `src/assets/`.
 
-- **Customizable Assets**
-  - Logo, illustration, and paw print can be replaced in `src/assets/`.
+---
 
 ## Quick Start
 
@@ -82,29 +69,35 @@ A modern, minimal web app for discovering and sharing Bellevue-area dog-friendly
    ```
    Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
+---
+
 ## Project Structure
 
-- `src/App.tsx` — Main layout, logo, Team Up button/modal, and layout logic
-- `src/components/PlaceList.tsx` — Card list for parks/trails (expandable, English UI)
-- `src/components/Map.tsx` — Google Map, only shows marker for selected card
+- `src/App.tsx` — Main layout, logo, Team Up routing, and layout logic
+- `src/components/PlaceList.tsx` — Card list for parks/trails (distance, selection, English UI)
+- `src/components/Map.tsx` — Google Map, shows markers for selected and team parks
+- `src/pages/TeamUpPage.tsx` — Team Up social system (teams, filter, join, message, create)
+- `src/pages/Login.tsx`, `src/pages/Register.tsx` — Local login/register
 - `src/assets/` — Logo, illustration, paw print, etc.
+
+---
 
 ## UI/UX Highlights
 
 - **No sidebar**: Only a centered logo in the top bar for a clean look
-- **Team Up**: Social dog-walking events are managed in a floating modal, not mixed with park/trail info
+- **Team Up**: Social dog-walking events are managed in a dedicated page/modal
 - **All text in English**
-- **Modern, minimal, blue/white color scheme**
+- **Modern, minimal, brown/beige color scheme**
 - **Google Fonts**: Oswald (headings), Quicksand (body)
 
-## Demo Data
-- The Team Up modal currently shows 3 demo events. You can expand a card for details and click Join (demo alert).
-- The Add (+) button in the modal currently shows a demo alert for creating a new event.
+---
 
 ## Customization
-- To add real team up events, connect the modal to a backend or local state.
+- To add real team up events, connect the modal/page to a backend.
 - To change the logo, replace `src/assets/Logo/SVG/Logo.svg`.
 - To change the illustration or paw print, update the files in `src/assets/`.
+
+---
 
 ## License
 MIT
