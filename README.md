@@ -1,6 +1,6 @@
 # lucabubu
-- strong-lamington-c6675b.netlify.app
-A modern, minimal web app for discovering and sharing Bellevue-area dog-friendly parks and trails, with a focus on clean UI and **social dog-walking (Team Up)** features.
+- https://cute-bublanina-a8be34.netlify.app/
+- A modern, minimal web app for discovering and sharing Bellevue-area dog-friendly parks and trails, with a focus on clean UI and **social dog-walking (Team Up)** features.
 
 ---
 
